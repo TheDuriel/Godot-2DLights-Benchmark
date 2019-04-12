@@ -1,0 +1,549 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Main.gd" type="Script" id=1]
+[ext_resource path="res://images/Background_Tile.tscn" type="PackedScene" id=2]
+[ext_resource path="res://images/light_1024.png" type="Texture" id=3]
+[ext_resource path="res://Camera2D.gd" type="Script" id=4]
+
+[sub_resource type="OccluderPolygon2D" id=1]
+polygon = PoolVector2Array( -10, -30, 10, -30, 30, -10, 30, 10, 10, 30, -10, 30, -30, 10, -30, -10 )
+
+[node name="Main" type="Node"]
+script = ExtResource( 1 )
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -2048.0
+margin_top = -2048.0
+margin_right = 1024.0
+margin_bottom = 1448.0
+rect_min_size = Vector2( 4096, 4096 )
+color = Color( 0.133333, 0.133333, 0.133333, 1 )
+
+[node name="Background" type="Node2D" parent="."]
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Sprite" parent="Background" instance=ExtResource( 2 )]
+position = Vector2( -1024, -1024 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Sprite12" parent="Background" instance=ExtResource( 2 )]
+position = Vector2( -1024, -768 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Sprite21" parent="Background" instance=ExtResource( 2 )]
+position = Vector2( -1024, -512 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Sprite35" parent="Background" instance=ExtResource( 2 )]
+position = Vector2( -1024, -256 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Sprite44" parent="Background" instance=ExtResource( 2 )]
+position = Vector2( -1024, 0 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Sprite53" parent="Background" instance=ExtResource( 2 )]
+position = Vector2( -1024, 256 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Sprite62" parent="Background" instance=ExtResource( 2 )]
+position = Vector2( -1024, 512 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Sprite71" parent="Background" instance=ExtResource( 2 )]
+position = Vector2( -1024, 768 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Sprite80" parent="Background" instance=ExtResource( 2 )]
+position = Vector2( -1024, 1024 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Sprite2" parent="Background" instance=ExtResource( 2 )]
+position = Vector2( -768, -1024 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Sprite10" parent="Background" instance=ExtResource( 2 )]
+position = Vector2( -768, -768 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Sprite19" parent="Background" instance=ExtResource( 2 )]
+position = Vector2( -768, -512 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Sprite33" parent="Background" instance=ExtResource( 2 )]
+position = Vector2( -768, -256 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Sprite42" parent="Background" instance=ExtResource( 2 )]
+position = Vector2( -768, 0 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Sprite51" parent="Background" instance=ExtResource( 2 )]
+position = Vector2( -768, 256 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Sprite60" parent="Background" instance=ExtResource( 2 )]
+position = Vector2( -768, 512 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Sprite69" parent="Background" instance=ExtResource( 2 )]
+position = Vector2( -768, 768 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Sprite78" parent="Background" instance=ExtResource( 2 )]
+position = Vector2( -768, 1024 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Sprite3" parent="Background" instance=ExtResource( 2 )]
+position = Vector2( -512, -1024 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Sprite11" parent="Background" instance=ExtResource( 2 )]
+position = Vector2( -512, -768 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Sprite20" parent="Background" instance=ExtResource( 2 )]
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Sprite34" parent="Background" instance=ExtResource( 2 )]
+position = Vector2( -512, -256 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Sprite43" parent="Background" instance=ExtResource( 2 )]
+position = Vector2( -512, 0 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Sprite52" parent="Background" instance=ExtResource( 2 )]
+position = Vector2( -512, 256 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Sprite61" parent="Background" instance=ExtResource( 2 )]
+position = Vector2( -512, 512 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Sprite70" parent="Background" instance=ExtResource( 2 )]
+position = Vector2( -512, 768 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Sprite79" parent="Background" instance=ExtResource( 2 )]
+position = Vector2( -512, 1024 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Sprite4" parent="Background" instance=ExtResource( 2 )]
+position = Vector2( -256, -1024 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Sprite13" parent="Background" instance=ExtResource( 2 )]
+position = Vector2( -256, -768 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Sprite22" parent="Background" instance=ExtResource( 2 )]
+position = Vector2( -256, -512 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Sprite36" parent="Background" instance=ExtResource( 2 )]
+position = Vector2( -256, -256 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Sprite45" parent="Background" instance=ExtResource( 2 )]
+position = Vector2( -256, 0 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Sprite54" parent="Background" instance=ExtResource( 2 )]
+position = Vector2( -256, 256 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Sprite63" parent="Background" instance=ExtResource( 2 )]
+position = Vector2( -256, 512 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Sprite72" parent="Background" instance=ExtResource( 2 )]
+position = Vector2( -256, 768 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Sprite81" parent="Background" instance=ExtResource( 2 )]
+position = Vector2( -256, 1024 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Sprite5" parent="Background" instance=ExtResource( 2 )]
+position = Vector2( 0, -1024 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Sprite14" parent="Background" instance=ExtResource( 2 )]
+position = Vector2( 0, -768 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Sprite23" parent="Background" instance=ExtResource( 2 )]
+position = Vector2( 0, -512 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Sprite28" parent="Background" instance=ExtResource( 2 )]
+position = Vector2( 0, -256 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Sprite37" parent="Background" instance=ExtResource( 2 )]
+position = Vector2( 0, 0 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Sprite46" parent="Background" instance=ExtResource( 2 )]
+position = Vector2( 0, 256 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Sprite55" parent="Background" instance=ExtResource( 2 )]
+position = Vector2( 0, 512 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Sprite64" parent="Background" instance=ExtResource( 2 )]
+position = Vector2( 0, 768 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Sprite73" parent="Background" instance=ExtResource( 2 )]
+position = Vector2( 0, 1024 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Sprite6" parent="Background" instance=ExtResource( 2 )]
+position = Vector2( 256, -1024 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Sprite15" parent="Background" instance=ExtResource( 2 )]
+position = Vector2( 256, -768 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Sprite24" parent="Background" instance=ExtResource( 2 )]
+position = Vector2( 256, -512 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Sprite29" parent="Background" instance=ExtResource( 2 )]
+position = Vector2( 256, -256 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Sprite38" parent="Background" instance=ExtResource( 2 )]
+position = Vector2( 256, 0 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Sprite47" parent="Background" instance=ExtResource( 2 )]
+position = Vector2( 256, 256 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Sprite56" parent="Background" instance=ExtResource( 2 )]
+position = Vector2( 256, 512 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Sprite65" parent="Background" instance=ExtResource( 2 )]
+position = Vector2( 256, 768 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Sprite74" parent="Background" instance=ExtResource( 2 )]
+position = Vector2( 256, 1024 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Sprite7" parent="Background" instance=ExtResource( 2 )]
+position = Vector2( 512, -1024 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Sprite16" parent="Background" instance=ExtResource( 2 )]
+position = Vector2( 512, -768 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Sprite25" parent="Background" instance=ExtResource( 2 )]
+position = Vector2( 512, -512 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Sprite30" parent="Background" instance=ExtResource( 2 )]
+position = Vector2( 512, -256 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Sprite39" parent="Background" instance=ExtResource( 2 )]
+position = Vector2( 512, 0 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Sprite48" parent="Background" instance=ExtResource( 2 )]
+position = Vector2( 512, 256 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Sprite57" parent="Background" instance=ExtResource( 2 )]
+position = Vector2( 512, 512 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Sprite66" parent="Background" instance=ExtResource( 2 )]
+position = Vector2( 512, 768 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Sprite75" parent="Background" instance=ExtResource( 2 )]
+position = Vector2( 512, 1024 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Sprite8" parent="Background" instance=ExtResource( 2 )]
+position = Vector2( 768, -1024 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Sprite17" parent="Background" instance=ExtResource( 2 )]
+position = Vector2( 768, -768 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Sprite26" parent="Background" instance=ExtResource( 2 )]
+position = Vector2( 768, -512 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Sprite31" parent="Background" instance=ExtResource( 2 )]
+position = Vector2( 768, -256 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Sprite40" parent="Background" instance=ExtResource( 2 )]
+position = Vector2( 768, 0 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Sprite49" parent="Background" instance=ExtResource( 2 )]
+position = Vector2( 768, 256 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Sprite58" parent="Background" instance=ExtResource( 2 )]
+position = Vector2( 768, 512 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Sprite67" parent="Background" instance=ExtResource( 2 )]
+position = Vector2( 768, 768 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Sprite76" parent="Background" instance=ExtResource( 2 )]
+position = Vector2( 768, 1024 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Sprite9" parent="Background" instance=ExtResource( 2 )]
+position = Vector2( 1024, -1024 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Sprite18" parent="Background" instance=ExtResource( 2 )]
+position = Vector2( 1024, -768 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Sprite27" parent="Background" instance=ExtResource( 2 )]
+position = Vector2( 1024, -512 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Sprite32" parent="Background" instance=ExtResource( 2 )]
+position = Vector2( 1024, -256 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Sprite41" parent="Background" instance=ExtResource( 2 )]
+position = Vector2( 1024, 0 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Sprite50" parent="Background" instance=ExtResource( 2 )]
+position = Vector2( 1024, 256 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Sprite59" parent="Background" instance=ExtResource( 2 )]
+position = Vector2( 1024, 512 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Sprite68" parent="Background" instance=ExtResource( 2 )]
+position = Vector2( 1024, 768 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Sprite77" parent="Background" instance=ExtResource( 2 )]
+position = Vector2( 1024, 1024 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Occluders" type="Node2D" parent="."]
+editor/display_folded = true
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="Occluders"]
+position = Vector2( 0, -384 )
+occluder = SubResource( 1 )
+
+[node name="LightOccluder2D2" type="LightOccluder2D" parent="Occluders"]
+position = Vector2( 256, -256 )
+occluder = SubResource( 1 )
+
+[node name="LightOccluder2D3" type="LightOccluder2D" parent="Occluders"]
+position = Vector2( 384, 0 )
+occluder = SubResource( 1 )
+
+[node name="LightOccluder2D4" type="LightOccluder2D" parent="Occluders"]
+position = Vector2( 256, 256 )
+occluder = SubResource( 1 )
+
+[node name="LightOccluder2D5" type="LightOccluder2D" parent="Occluders"]
+position = Vector2( 0, 384 )
+occluder = SubResource( 1 )
+
+[node name="LightOccluder2D6" type="LightOccluder2D" parent="Occluders"]
+position = Vector2( -256, 256 )
+occluder = SubResource( 1 )
+
+[node name="LightOccluder2D7" type="LightOccluder2D" parent="Occluders"]
+position = Vector2( -384, 0 )
+occluder = SubResource( 1 )
+
+[node name="LightOccluder2D8" type="LightOccluder2D" parent="Occluders"]
+position = Vector2( -256, -256 )
+occluder = SubResource( 1 )
+
+[node name="LightsPrimary" type="Node2D" parent="."]
+
+[node name="0" type="Light2D" parent="LightsPrimary" groups=[
+"lights",
+]]
+editor/display_folded = true
+position = Vector2( 0, -448 )
+texture = ExtResource( 3 )
+energy = 2.0
+range_height = 100.0
+shadow_enabled = true
+shadow_color = Color( 0, 0, 0, 1 )
+
+[node name="P" type="Polygon2D" parent="LightsPrimary/0"]
+light_mask = 0
+color = Color( 1, 0, 0, 1 )
+polygon = PoolVector2Array( 0, -4, 4, 0, 0, 4, -4, 0 )
+
+[node name="1" type="Light2D" parent="LightsPrimary" groups=[
+"lights",
+]]
+editor/display_folded = true
+position = Vector2( 448, 0 )
+texture = ExtResource( 3 )
+energy = 2.0
+range_height = 100.0
+shadow_enabled = true
+shadow_color = Color( 0, 0, 0, 1 )
+
+[node name="P" type="Polygon2D" parent="LightsPrimary/1"]
+light_mask = 0
+color = Color( 1, 0, 0, 1 )
+polygon = PoolVector2Array( 0, -4, 4, 0, 0, 4, -4, 0 )
+
+[node name="2" type="Light2D" parent="LightsPrimary" groups=[
+"lights",
+]]
+editor/display_folded = true
+position = Vector2( 0, 448 )
+texture = ExtResource( 3 )
+energy = 2.0
+range_height = 100.0
+shadow_enabled = true
+shadow_color = Color( 0, 0, 0, 1 )
+
+[node name="P" type="Polygon2D" parent="LightsPrimary/2"]
+light_mask = 0
+color = Color( 1, 0, 0, 1 )
+polygon = PoolVector2Array( 0, -4, 4, 0, 0, 4, -4, 0 )
+
+[node name="3" type="Light2D" parent="LightsPrimary" groups=[
+"lights",
+]]
+editor/display_folded = true
+position = Vector2( -448, 0 )
+texture = ExtResource( 3 )
+energy = 2.0
+range_height = 100.0
+shadow_enabled = true
+shadow_color = Color( 0, 0, 0, 1 )
+
+[node name="P" type="Polygon2D" parent="LightsPrimary/3"]
+light_mask = 0
+color = Color( 1, 0, 0, 1 )
+polygon = PoolVector2Array( 0, -4, 4, 0, 0, 4, -4, 0 )
+
+[node name="LightsSecondary" type="Node2D" parent="."]
+editor/display_folded = true
+rotation = 0.785398
+
+[node name="0" type="Light2D" parent="LightsSecondary" groups=[
+"lights",
+]]
+editor/display_folded = true
+position = Vector2( 0, -448 )
+texture = ExtResource( 3 )
+energy = 2.0
+range_height = 100.0
+shadow_enabled = true
+shadow_color = Color( 0, 0, 0, 1 )
+
+[node name="P" type="Polygon2D" parent="LightsSecondary/0"]
+light_mask = 0
+rotation = -0.785398
+color = Color( 1, 0, 0, 1 )
+polygon = PoolVector2Array( 0, -4, 4, 0, 0, 4, -4, 0 )
+
+[node name="1" type="Light2D" parent="LightsSecondary" groups=[
+"lights",
+]]
+editor/display_folded = true
+position = Vector2( 448, 0 )
+texture = ExtResource( 3 )
+energy = 2.0
+range_height = 100.0
+shadow_enabled = true
+shadow_color = Color( 0, 0, 0, 1 )
+
+[node name="P" type="Polygon2D" parent="LightsSecondary/1"]
+light_mask = 0
+rotation = -0.785398
+color = Color( 1, 0, 0, 1 )
+polygon = PoolVector2Array( 0, -4, 4, 0, 0, 4, -4, 0 )
+
+[node name="2" type="Light2D" parent="LightsSecondary" groups=[
+"lights",
+]]
+editor/display_folded = true
+position = Vector2( 0, 448 )
+texture = ExtResource( 3 )
+energy = 2.0
+range_height = 100.0
+shadow_enabled = true
+shadow_color = Color( 0, 0, 0, 1 )
+
+[node name="P" type="Polygon2D" parent="LightsSecondary/2"]
+light_mask = 0
+rotation = -0.785398
+color = Color( 1, 0, 0, 1 )
+polygon = PoolVector2Array( 0, -4, 4, 0, 0, 4, -4, 0 )
+
+[node name="3" type="Light2D" parent="LightsSecondary" groups=[
+"lights",
+]]
+editor/display_folded = true
+position = Vector2( -448, 0 )
+texture = ExtResource( 3 )
+energy = 2.0
+range_height = 100.0
+shadow_enabled = true
+shadow_color = Color( 0, 0, 0, 1 )
+
+[node name="P" type="Polygon2D" parent="LightsSecondary/3"]
+light_mask = 0
+rotation = -0.785398
+color = Color( 1, 0, 0, 1 )
+polygon = PoolVector2Array( 0, -4, 4, 0, 0, 4, -4, 0 )
+
+[node name="Camera2D" type="Camera2D" parent="."]
+script = ExtResource( 4 )
+
+[node name="Reticle" type="Polygon2D" parent="Camera2D"]
+light_mask = 0
+polygon = PoolVector2Array( 0, -10, 10, 0, 0, 10, -10, 0 )
+vertex_colors = PoolColorArray( 1, 0, 0, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1 )
+
+[node name="UI" type="CanvasLayer" parent="."]
+
+[node name="V" type="VBoxContainer" parent="UI"]
+margin_right = 40.0
+margin_bottom = 40.0
+
+[node name="Controls" type="Label" parent="UI/V"]
+light_mask = 0
+margin_right = 62.0
+margin_bottom = 14.0
+text = "Statistics:"
+
+[node name="Monitor" type="Label" parent="UI/V"]
+light_mask = 0
+margin_top = 18.0
+margin_right = 62.0
+margin_bottom = 32.0
+text = "Statistics:"
+
