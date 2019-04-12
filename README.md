@@ -1,6 +1,6 @@
 # Godot-2DLights-Benchmark
 
-This is a bencharmking project for Godot 3.1s 2D Lighting implementation.
+This is a benchmark project for Godot 3.1s 2D Lighting implementation.
 
 Hotkeys are on the left, you can change textures by editing the constants at the top.
 
