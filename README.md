@@ -7,3 +7,5 @@ Hotkeys are on the left, you can change textures by editing the constants at the
 All Light and Shadow parameters are exposed, and a basic performance monitor is included for exported projects.
 
 MIT License.
+
+![Screenshot](image.png)
