@@ -35,12 +35,12 @@ func _input(event) -> void:
 func _physics_process(delta) -> void:
 	
 	var keydir = Vector2()
-	if Input.is_action_pressed("ui_up"):
+	if Input.is_action_pressed("camera_up"):
 		keydir.y -= 1
-	if Input.is_action_pressed("ui_down"):
+	if Input.is_action_pressed("camera_down"):
 		keydir.y += 1
-	if Input.is_action_pressed("ui_left"):
+	if Input.is_action_pressed("camera_left"):
 		keydir.x -= 1
-	if Input.is_action_pressed("ui_right"):
+	if Input.is_action_pressed("camera_right"):
 		keydir.x += 1
 	position += keydir * SPEED * delta
