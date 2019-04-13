@@ -6,3 +6,5 @@ export_presets.cfg
 
 # Mono-specific ignores
 .mono/
+_export/LightBenchmark.pck
+_export/LightBenchmark.exe
