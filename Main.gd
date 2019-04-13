@@ -84,9 +84,9 @@ func _input(event) -> void:
 	if event.is_action_pressed("rotate_toggle"):
 		rotating = true if not rotating else false
 	
-	if event.is_action_pressed("rotate_speed_down"):
+	if event.is_action("rotate_speed_down"):
 		rotation_speed += rotation_speed_step
-	elif event.is_action_pressed("rotate_speed_up"):
+	elif event.is_action("rotate_speed_up"):
 		rotation_speed -= rotation_speed_step
 	
 	if event.is_action_pressed("toggle_primary"):
@@ -105,12 +105,12 @@ func _input(event) -> void:
 		for i in lights:
 			i.shadow_buffer_size = buffer_size
 	
-	if event.is_action_pressed("gradient_length_up"):
+	if event.is_action("gradient_length_up"):
 		gradient_length += gradient_length_step
 		gradient_length = clamp(gradient_length, 0, 32)
 		for i in lights:
 			i.shadow_gradient_length = gradient_length
-	elif event.is_action_pressed("gradient_length_down"):
+	elif event.is_action("gradient_length_down"):
 		gradient_length -= gradient_length_step
 		gradient_length = clamp(gradient_length, 0, 32)
 		for i in lights:
@@ -127,12 +127,12 @@ func _input(event) -> void:
 		for i in lights:
 			i.shadow_filter = pcf_steps[pcf]
 	
-	if event.is_action_pressed("filter_smooth_up"):
+	if event.is_action("filter_smooth_up"):
 		filter_smooth += filter_smooth_step
 		filter_smooth = clamp(filter_smooth, 0, 32)
 		for i in lights:
 			i.shadow_filter_smooth = filter_smooth
-	elif event.is_action_pressed("filter_smooth_down"):
+	elif event.is_action("filter_smooth_down"):
 		filter_smooth -= filter_smooth_step
 		filter_smooth = clamp(filter_smooth, 0, 32)
 		for i in lights:
